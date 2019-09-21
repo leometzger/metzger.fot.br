@@ -1,7 +1,7 @@
 <template>
   <div id="site-wrap">
     <site-mobile-menu />
-    <app-header />
+    <app-header :specialties="specialties" />
     <router-view />
     <footer />
   </div>
@@ -14,5 +14,21 @@ import AppFooter from './components/Footer'
 
 export default {
   components: {AppFooter, AppHeader, SiteMobileMenu},
+  computed: {
+    specialties() {
+      return [
+        {
+          id: 'events',
+          description: '',
+          route: {
+            name: 'album',
+            params: {
+              id: 'events',
+            },
+          },
+        },
+      ]
+    },
+  },
 }
 </script>

@@ -16,19 +16,13 @@
           >
             <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
               <li>
-                <a href="index.html">Home</a>
+                <router-link to="home">Home</router-link>
               </li>
               <li class="has-children">
-                <a>Fotografias</a>
+                <a>Albuns</a>
                 <ul class="dropdown">
-                  <li>
-                    <a href="#">Nature</a>
-                  </li>
-                  <li>
-                    <a href="#">Portrait</a>
-                  </li>
-                  <li>
-                    <a href="#">Wedding</a>
+                  <li v-for="(specialty, index) in specialties" :key="index">
+                    <router-link :to="specialty.route">{{specialty.description}}</router-link>
                   </li>
                 </ul>
               </li>
@@ -86,3 +80,14 @@
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  props: {
+    specialties: {
+      type: Array,
+      required: true,
+    },
+  },
+}
+</script>

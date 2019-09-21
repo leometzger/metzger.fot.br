@@ -39,8 +39,17 @@ export default {
       return [
         {
           title: 'Associativismo',
+          subtitle: '5 Fotos / Pessoas',
+          image: 'images/associativism/0.jpg',
+          route: {
+            name: '#',
+            params: {},
+          },
+        },
+        {
+          title: 'Celebridades',
           subtitle: '10 Fotos / Pessoas',
-          image: 'images/associativism/1.jpg',
+          image: 'images/celebrities/1.jpg',
           route: {
             name: '#',
             params: {},
@@ -48,8 +57,44 @@ export default {
         },
         {
           title: 'Eventos',
-          subtitle: '15 Fotos / Pessoas',
+          subtitle: '10 Fotos / Pessoas',
           image: 'images/events/1.jpg',
+          route: {
+            name: '#',
+            params: {},
+          },
+        },
+        {
+          title: 'Industriais',
+          subtitle: '10 Fotos / Indústria',
+          image: 'images/industrial/0.jpg',
+          route: {
+            name: '#',
+            params: {},
+          },
+        },
+        {
+          title: 'Interiores',
+          subtitle: '10 Fotos / Lugares',
+          image: 'images/interiors/0.jpg',
+          route: {
+            name: '#',
+            params: {},
+          },
+        },
+        {
+          title: 'Produtos',
+          subtitle: '10 Fotos / Indústria',
+          image: 'images/products/0.jpg',
+          route: {
+            name: '#',
+            params: {},
+          },
+        },
+        {
+          title: 'Profissionais',
+          subtitle: '10 Fotos / Pessoas',
+          image: 'images/professionals/0.jpg',
           route: {
             name: '#',
             params: {},
