@@ -3,7 +3,7 @@
     <site-mobile-menu />
     <app-header :specialties="specialties" />
     <router-view />
-    <footer />
+    <app-footer />
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
       return [
         {
           id: 'events',
-          description: '',
+          description: 'Eventos',
           route: {
             name: 'album',
             params: {

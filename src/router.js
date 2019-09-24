@@ -23,5 +23,10 @@ export default new Router({
       name: 'about',
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
     },
+    {
+      path: '/album/:id',
+      name: 'albuns-id',
+      component: () => import(/* webpackChunkName: "album" */ './views/Album.vue'),
+    },
   ],
 });

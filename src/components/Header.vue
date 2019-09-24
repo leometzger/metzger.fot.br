@@ -52,17 +52,7 @@
               </li>
               <li>
                 <a href="#" class="pl-3 pr-3">
-                  <span class="icon-twitter"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="pl-3 pr-3">
                   <span class="icon-instagram"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="pl-3 pr-3">
-                  <span class="icon-youtube-play"></span>
                 </a>
               </li>
             </ul>

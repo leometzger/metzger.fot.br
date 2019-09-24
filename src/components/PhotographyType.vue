@@ -1,7 +1,7 @@
 <template>
   <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
     <router-link class="image-gradient" :to="route">
-      <figure>
+      <figure class="test">
         <img :src="image" alt class="img-fluid" />
       </figure>
       <div class="text">
@@ -34,3 +34,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.test {
+  height: 200px;
+}
+</style>

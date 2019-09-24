@@ -3,8 +3,8 @@
     <div class="col-md-12">
       <p>
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright &copy;
-        2019 All rights reserved | This template is made with
+        Copyright &copy;{{currentYear}} All rights reserved | This template is made
+        with
         <i
           class="icon-heart text-danger"
           aria-hidden="true"
@@ -15,3 +15,14 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'copyright',
+  computed: {
+    currentYear() {
+      return new Date().getFullYear()
+    },
+  },
+}
+</script>

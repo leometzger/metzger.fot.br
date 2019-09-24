@@ -8,13 +8,20 @@
       </div>
       <div class="row">
         <div class="col-md-6" :key="index" v-for="(pair, index) in specialtiesPairs">
-          <specialty :title="pair[0].title" :subtitle="pair[0].subtitle" :image="pair[0].image" />
-          <specialty
-            v-if="pair[1]"
-            :title="pair[1].title"
-            :description="pair[1].subtitle"
-            :image="pair[1].image"
-          />
+          <div class="site-block-half d-lg-flex specialty">
+            <div class="image specialty" :style="`background-image: url(${pair[0].image});`"></div>
+            <div class="text">
+              <h3>{{pair[0].title}}</h3>
+              <p>{{pair[0].subtitle}}</p>
+            </div>
+          </div>
+          <div class="site-block-half d-lg-flex specialty" v-if="pair[1]">
+            <div class="image" :style="`background-image: url(${pair[1].image});`"></div>
+            <div class="text">
+              <h3>{{pair[1].title}}</h3>
+              <p>{{pair[1].subtitle}}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -22,13 +29,9 @@
 </template>
 
 <script>
-import Specialty from './Specialty'
 import {chunk} from 'lodash'
 
 export default {
-  components: {
-    Specialty,
-  },
   props: {
     specialties: {
       type: Array,
@@ -42,3 +45,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.specialty {
+  height: 170px;
+}
+</style>

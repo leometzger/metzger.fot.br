@@ -3,11 +3,11 @@
     <subheader
       :title="subheaderTitle"
       :subtitle="subheaderSubtitle"
-      image="images/industrial/3.jpg"
+      image="images/industrial/0.jpg"
     />
     <profile image="images/profile.jpg" />
     <specialties :specialties="specialties" />
-    <testimonials :testimonials="testimonials" />
+    <testimonials :testimonials="testimonials" :background="background" />
     <photographies :photographies="photographies" />
   </div>
 </template>
@@ -58,7 +58,7 @@ export default {
         {
           title: 'Eventos',
           subtitle: '10 Fotos / Pessoas',
-          image: 'images/events/1.jpg',
+          image: 'images/events/4.jpg',
           route: {
             name: '#',
             params: {},
@@ -106,22 +106,51 @@ export default {
       return [
         {
           title: 'Associativismo',
-          subtitle: '',
-          image: 'images/associativism/1.jpg',
+          subtitle: '...',
+          image: 'images/associativism/8.jpg',
+        },
+        {
+          title: 'Celebridades',
+          subtitle: 'Pessoas fotografadas ...',
+          image: 'images/celebrities/9.jpg',
         },
         {
           title: 'Eventos',
-          subtitle: '',
-          image: 'images/events/1.jpg',
+          subtitle:
+            'Diversos eventos são fotografados conforme a sua necessidade',
+          image: 'images/events/4.jpg',
+        },
+        {
+          title: 'Indústriais',
+          subtitle: 'Fotos industriais são uma das principais ...',
+          image: 'images/industrial/4.jpg',
+        },
+        {
+          title: 'Interiores',
+          subtitle: 'Fotos de interiores...',
+          image: 'images/interiors/4.jpg',
+        },
+        {
+          title: 'Produtos',
+          subtitle: 'Produtos sao uma fonte...',
+          image: 'images/products/4.jpg',
+        },
+        {
+          title: 'Profissionais',
+          subtitle: 'Profissionais fotografados nas industrias...',
+          image: 'images/professionals/26.jpg',
         },
       ]
+    },
+    background() {
+      return 'images/events/12.jpg'
     },
     testimonials() {
       return [
         {
           person: 'Leonardo Metzger',
           testimonial: 'Testing',
-          image: 'images/events/1.jpg',
+          image: 'images/events/0.jpg',
         },
       ]
     },

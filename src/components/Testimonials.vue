@@ -1,7 +1,7 @@
 <template>
   <div
     class="py-5 site-block-testimonial"
-    style="background-image: url('images/hero_bg_1.jpg');"
+    :style="`background-image: url(${background});`"
     data-stellar-background-ratio="0.5"
   >
     <div class="container">
@@ -31,6 +31,10 @@ export default {
     testimonials: {
       type: Array,
       required: false,
+    },
+    background: {
+      type: String,
+      required: true,
     },
   },
 }
