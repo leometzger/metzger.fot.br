@@ -24,9 +24,14 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
     },
     {
-      path: '/album/:id',
-      name: 'albuns-id',
+      path: '/albums/:id',
+      name: 'albums-id',
       component: () => import(/* webpackChunkName: "album" */ './views/Album.vue'),
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: () => import(/* webpackChunkName: "contact" */ './views/Contact.vue'),
     },
   ],
 });

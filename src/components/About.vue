@@ -2,17 +2,14 @@
   <div class="site-section" data-aos="fade">
     <div class="container">
       <div class="row mb-5">
-        <div class="col-md-6 mb-5">
+        <div class="col-md-4 mb-5">
           <img :src="image" alt="Images" class="img-fluid" />
         </div>
-        <div class="col-md-5 ml-auto">
+        <div class="col-md-6 ml-auto">
           <h3 class="text-black mb-3">{{title}}</h3>
           <p v-for="(paragraph, index) in paragraphs" :key="index">{{paragraph}}</p>
           <p class="mt-5 mb-3">Me siga</p>
           <p>
-            <a href="#" class="pr-2">
-              <span class="icon-twitter"></span>
-            </a>
             <a href="#" class="p-2">
               <span class="icon-instagram"></span>
             </a>

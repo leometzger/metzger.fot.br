@@ -7,7 +7,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6" :key="index" v-for="(pair, index) in specialtiesPairs">
+        <div class="col-md-12" :key="index" v-for="(pair, index) in specialtiesPairs">
           <div class="site-block-half d-lg-flex specialty">
             <div class="image specialty" :style="`background-image: url(${pair[0].image});`"></div>
             <div class="text">
@@ -48,6 +48,6 @@ export default {
 
 <style scoped>
 .specialty {
-  height: 170px;
+  height: 280px;
 }
 </style>

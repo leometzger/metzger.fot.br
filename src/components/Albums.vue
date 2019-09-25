@@ -8,13 +8,13 @@
       </div>
 
       <div class="row">
-        <phothography-type
+        <album-cover
+          v-for="(album, index) in albums"
           :key="index"
-          v-for="(type, index) in photographies"
-          :title="type.title"
-          :subtitle="type.subtitle"
-          :image="type.image"
-          :route="type.route"
+          :title="album.title"
+          :subtitle="album.subtitle"
+          :image="album.image"
+          :route="album.route"
         />
       </div>
     </div>
@@ -22,12 +22,12 @@
 </template>
 
 <script>
-import PhothographyType from './PhotographyType'
+import AlbumCover from './AlbumCover'
 
 export default {
-  components: {PhothographyType},
+  components: {AlbumCover},
   props: {
-    photographies: {
+    albums: {
       type: Array,
       required: true,
     },

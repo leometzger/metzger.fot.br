@@ -1,7 +1,7 @@
 <template>
   <div id="site-wrap">
     <site-mobile-menu />
-    <app-header :specialties="specialties" />
+    <app-header :albums="albums" />
     <router-view />
     <app-footer />
   </div>
@@ -12,22 +12,13 @@ import SiteMobileMenu from './components/SiteMobileMenu'
 import AppHeader from './components/Header'
 import AppFooter from './components/Footer'
 
+import {albums} from './data'
+
 export default {
   components: {AppFooter, AppHeader, SiteMobileMenu},
   computed: {
-    specialties() {
-      return [
-        {
-          id: 'events',
-          description: 'Eventos',
-          route: {
-            name: 'album',
-            params: {
-              id: 'events',
-            },
-          },
-        },
-      ]
+    albums() {
+      return albums
     },
   },
 }

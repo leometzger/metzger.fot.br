@@ -4,7 +4,7 @@
       <div class="row align-items-center">
         <div class="col-6 col-xl-2">
           <h1 class="mb-0">
-            <router-link to="home" class="text-black h2 mb-0">
+            <router-link to="/" class="text-black h2 mb-0">
               <img src="images/logo.png" style="width: 120px;" />
             </router-link>
           </h1>
@@ -16,13 +16,13 @@
           >
             <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
               <li>
-                <router-link to="home">Home</router-link>
+                <router-link to="/">Home</router-link>
               </li>
               <li class="has-children">
                 <a>Albuns</a>
                 <ul class="dropdown">
-                  <li v-for="(specialty, index) in specialties" :key="index">
-                    <router-link :to="specialty.route">{{specialty.description}}</router-link>
+                  <li v-for="(album, index) in albums" :key="index">
+                    <router-link :to="album.route">{{album.title}}</router-link>
                   </li>
                 </ul>
               </li>
@@ -32,7 +32,7 @@
               <li>
                 <router-link to="about">Sobre</router-link>
               </li>
-              <li class="active">
+              <li>
                 <router-link to="contact">Contato</router-link>
               </li>
             </ul>
@@ -74,7 +74,7 @@
 <script>
 export default {
   props: {
-    specialties: {
+    albums: {
       type: Array,
       required: true,
     },

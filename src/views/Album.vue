@@ -1,18 +1,18 @@
 <template>
   <div>
     <subheader />
-    <specialty-images />
+    <album />
   </div>
 </template>
 
 <script>
 import Subheader from '../components/Subheader'
-import SpecialtyImages from '../components/Single'
+import Album from '../components/Album'
 
 export default {
   props: {
     Subheader,
-    SpecialtyImages,
+    Album
   },
 }
 </script>
