@@ -1,7 +1,11 @@
 <template>
   <div>
-    <subheader image="images/covers/home.jpeg" title="Sobre mim" />
-    <about title="Olá, eu sou o fotógrafo" image="images/profile.jpg" :paragraphs="paragraphs" />
+    <subheader image="/images/covers/about.jpeg" title="Sobre Metzger Fotografias" />
+    <about
+      title="Olá, somos a Metzger Fotografias"
+      image="images/logo.png"
+      :paragraphs="paragraphs"
+    />
     <skills title="Minhas habilidades" :skills="skills" />
     <albums :albums="albums" />
   </div>
@@ -43,7 +47,11 @@ Marcelo Metzger, neto do fundador da empresa, embora tenha se formado em Comérc
       ]
     },
     albums() {
-      return albums
+      return albums.map(album => {
+        return Object.assign(album, {
+          subtitle: `${album.images.length} Fotos / ${album.type}`,
+        })
+      })
     },
   },
 }

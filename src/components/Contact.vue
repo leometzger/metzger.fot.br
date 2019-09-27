@@ -40,7 +40,7 @@
                       cols="30"
                       rows="7"
                       class="form-control"
-                      placeholder="Write your notes or questions here..."
+                      placeholder="Escreva suas dúvidas aqui"
                     ></textarea>
                   </div>
                 </div>
@@ -59,7 +59,12 @@
             <div class="col-lg-3 ml-auto">
               <div class="mb-3 bg-white">
                 <p class="mb-0 font-weight-bold">Endereço</p>
-                <p class="mb-4">Rua Marechal Floriano 79, São Bento do Sul, SC, Brasil</p>
+                <p class="mb-4">Rua Algusto Klimmek 79, Centro, São Bento do Sul, SC, Brasil</p>
+
+                <p class="mb-0 font-weight-bold">CEP</p>
+                <p class="mb-4">
+                  <a href="#">89280-349</a>
+                </p>
 
                 <p class="mb-0 font-weight-bold">Telefone</p>
                 <p class="mb-4">
@@ -68,7 +73,7 @@
 
                 <p class="mb-0 font-weight-bold">Endereço de Email</p>
                 <p class="mb-0">
-                  <a href="#">marcelo@metzger.fot.br</a>
+                  <a href="#">contato@metzger.fot.br</a>
                 </p>
               </div>
             </div>

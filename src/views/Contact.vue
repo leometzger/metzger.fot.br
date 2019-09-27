@@ -1,6 +1,6 @@
 <template>
   <div>
-    <subheader title="Entre em contato" image="images/covers/home.jpeg" />
+    <subheader title="Entre em contato" image="images/covers/contact.jpeg" />
     <contact />
   </div>
 </template>

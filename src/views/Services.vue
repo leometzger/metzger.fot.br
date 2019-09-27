@@ -1,6 +1,6 @@
 <template>
   <div>
-    <subheader title="Meus serviços" image="images/covers/home.jpeg" />
+    <subheader title="Meus serviços" image="images/covers/services.jpeg" />
     <specialties :specialties="specialties" />
     <contact-me />
   </div>

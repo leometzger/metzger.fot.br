@@ -35,8 +35,16 @@ export default {
 }
 </script>
 
-<style scoped>
-.test {
-  height: 200px;
+<style lang="css" scoped>
+.album-cover {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
 }
 </style>

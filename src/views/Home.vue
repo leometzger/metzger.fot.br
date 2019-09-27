@@ -5,7 +5,7 @@
       :subtitle="subheaderSubtitle"
       image="images/covers/home.jpeg"
     />
-    <profile image="images/profile.jpg" />
+    <profile image="/images/logo.png" />
     <specialties :specialties="specialties" />
     <testimonials :testimonials="testimonials" :background="background" />
     <albums :albums="albums" />
@@ -38,20 +38,24 @@ export default {
       return 'Fotografia corporativa para agregar valor à marca'
     },
     albums() {
-      return albums
+      return albums.map(album => {
+        return Object.assign(album, {
+          subtitle: `${album.images.length} Fotos / ${album.type}`,
+        })
+      })
     },
     specialties() {
       return specialties
     },
     background() {
-      return 'images/covers/testimonials.jpeg'
+      return '/images/covers/testimonials.jpeg'
     },
     testimonials() {
       return [
         {
           person: 'Leonardo Metzger',
           testimonial: 'Testing',
-          image: 'images/covers/testimonials.jpeg',
+          image: '/images/covers/testimonials.jpeg',
         },
       ]
     },

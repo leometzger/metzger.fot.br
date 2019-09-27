@@ -5,7 +5,7 @@
         <div class="col-6 col-xl-2">
           <h1 class="mb-0">
             <router-link to="/" class="text-black h2 mb-0">
-              <img src="images/logo.png" style="width: 120px;" />
+              <img src="/images/logo.png" style="width: 120px;" />
             </router-link>
           </h1>
         </div>
@@ -27,13 +27,13 @@
                 </ul>
               </li>
               <li>
-                <router-link to="services">Serviços</router-link>
+                <router-link to="/services">Serviços</router-link>
               </li>
               <li>
-                <router-link to="about">Sobre</router-link>
+                <router-link to="/about">Sobre</router-link>
               </li>
               <li>
-                <router-link to="contact">Contato</router-link>
+                <router-link to="/contact">Contato</router-link>
               </li>
             </ul>
           </nav>
