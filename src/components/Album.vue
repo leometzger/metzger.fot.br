@@ -28,6 +28,7 @@ export default {
   },
   mounted() {
     $('#lightgallery').lightGallery({
+      zoom: false,
       download: false,
       share: false,
       pause: 2000,

@@ -5,7 +5,7 @@
         <div class="col-6 col-xl-2">
           <h1 class="mb-0">
             <router-link to="/" class="text-black h2 mb-0">
-              <img src="/images/logo.png" style="width: 120px;" />
+              <img src="/images/logo_deitada.png" style="width: 120px;" />
             </router-link>
           </h1>
         </div>
@@ -46,12 +46,20 @@
               data-class="social"
             >
               <li>
-                <a href="#" class="pl-0 pr-3">
+                <a
+                  href="https://www.facebook.com/metzgerfotografias"
+                  target="_blank"
+                  class="pl-0 pr-3"
+                >
                   <span class="icon-facebook"></span>
                 </a>
               </li>
               <li>
-                <a href="#" class="pl-3 pr-3">
+                <a
+                  href="https://www.instagram.com/metzgerfotografias"
+                  target="_blank"
+                  class="pl-3 pr-3"
+                >
                   <span class="icon-instagram"></span>
                 </a>
               </li>

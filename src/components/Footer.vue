@@ -21,23 +21,20 @@
             <div class="col-md-6 col-lg-6">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#">Home</a>
+                  <router-link to="/">Home</router-link>
                 </li>
                 <li>
-                  <a href="#">Albuns</a>
-                </li>
-                <li>
-                  <a href="#">Serviços</a>
+                  <router-link to="/services">Serviços</router-link>
                 </li>
               </ul>
             </div>
             <div class="col-md-6 col-lg-6">
               <ul class="list-unstyled">
                 <li>
-                  <a href="#">Sobre</a>
+                  <router-link to="/about">Sobre</router-link>
                 </li>
                 <li>
-                  <a href="#">Contato</a>
+                  <router-link to="/contact">Contato</router-link>
                 </li>
               </ul>
             </div>

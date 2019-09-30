@@ -1,9 +1,9 @@
 <template>
   <div>
-    <a href="#" class="pl-0 pr-3">
+    <a href="https://www.facebook.com/metzgerfotografias" target="_blank" class="pl-0 pr-3">
       <span class="icon-facebook"></span>
     </a>
-    <a href="#" class="pl-3 pr-3">
+    <a href="https://www.facebook.com/metzgerfotografias" target="_blank" class="pl-3 pr-3">
       <span class="icon-instagram"></span>
     </a>
   </div>

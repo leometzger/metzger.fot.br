@@ -28,7 +28,7 @@ export default {
       required: true,
     },
     route: {
-      type: Object,
+      type: [Object, String],
       required: true,
     },
   },

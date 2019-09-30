@@ -5,7 +5,10 @@
         <div class="col-md-7">
           <div class="row">
             <div class="col-lg-8 mb-5">
-              <form action="mailto:leonardo.metzger@outlook.com">
+              <form action="http://formmail.kinghost.net/formmail.cgi">
+                <input type="hidden" name="redirect" value="https://metzger.fot.br/contact" />
+                <input type="hidden" name="email" value="contato@metzger.fot.br" />
+
                 <div class="row form-group">
                   <div class="col-md-6 mb-3 mb-md-0">
                     <label class="text-black" for="fname">Primeiro Nome</label>
@@ -20,13 +23,13 @@
                 <div class="row form-group">
                   <div class="col-md-12">
                     <label class="text-black" for="email">Email</label>
-                    <input type="email" id="email" class="form-control" />
+                    <input type="email" name="recipient" id="email" class="form-control" />
                   </div>
                 </div>
 
                 <div class="row form-group">
                   <div class="col-md-12">
-                    <label class="text-black" for="subject">Assunto</label>
+                    <label class="text-black" name="subject" for="subject">Assunto</label>
                     <input type="subject" id="subject" class="form-control" />
                   </div>
                 </div>
@@ -40,7 +43,7 @@
                       cols="30"
                       rows="7"
                       class="form-control"
-                      placeholder="Escreva suas dúvidas aqui"
+                      placeholder="Escreva sua mensagem aqui"
                     ></textarea>
                   </div>
                 </div>

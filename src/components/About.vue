@@ -10,10 +10,10 @@
           <p v-for="(paragraph, index) in paragraphs" :key="index">{{paragraph}}</p>
           <p class="mt-5 mb-3">Me siga</p>
           <p>
-            <a href="#" class="p-2">
+            <a href="https://www.instagram.com/metzgerfotografias" target="_blank" class="p-2">
               <span class="icon-instagram"></span>
             </a>
-            <a href="#" class="p-2">
+            <a href="https://www.facebook.com/metzgerfotografias" target="_blank" class="p-2">
               <span class="icon-facebook"></span>
             </a>
           </p>
