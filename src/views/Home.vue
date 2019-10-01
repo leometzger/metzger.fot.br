@@ -6,7 +6,7 @@
       image="images/covers/home.jpeg"
     />
     <profile image="/images/logo.png" />
-    <specialties :specialties="specialties" />
+    <specialties :specialties="specialties" pairs />
     <testimonials :testimonials="testimonials" :background="background" />
     <albums :albums="albums" />
   </div>

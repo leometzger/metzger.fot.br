@@ -17,7 +17,10 @@ export default {
   components: {ContactMe, Subheader, Specialties},
   computed: {
     specialties() {
-      return specialties
+      return specialties.map(specialty => ({
+        ...specialty,
+        subtitle: specialty.description,
+      }))
     },
   },
 }

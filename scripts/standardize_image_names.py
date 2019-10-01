@@ -15,11 +15,12 @@ def rename_files(dir):
 
 
 if __name__ == "__main__":
-    images_dir = 'public/images'
-    subdirs = os.listdir(images_dir)
+    images_dir = 'public/images/facades'
+    rename_files(images_dir)
+    #subdirs = os.listdir(images_dir)
 
-    for subdir in subdirs:
-        directory = os.path.join(images_dir,  subdir)
+    # for subdir in subdirs:
+    #directory = os.path.join(images_dir,  subdir)
 
-        if os.path.isdir(directory):
-            rename_files(directory)
+    # if os.path.isdir(directory):
+    # rename_files(directory)

@@ -1,10 +1,61 @@
 export const albums = [
   {
+    id: 'labs',
+    title: 'Ambientes clínicos e laboratórios',
+    type: 'Lugares',
+    subtitle: 'Sensações como credibilidade, conforto e segurança são os pontos altos dessas fotografias.',
+    description: 'O registro de processos técnicos em ambientes clínicos, como clínicas, laboratórios e hospitais, exige técnica e olhar humanizado. A composição deve resultar em imagem que transmitam sensação de segurança, eficiência e conforto.',
+    route: {
+      name: 'albums-id',
+      params: {
+        id: 'labs'
+      },
+    },
+    image: '/images/covers/labs.jpg',
+    images: [
+      '/images/labs/0.jpg',
+      '/images/labs/1.jpg',
+      '/images/labs/2.jpg',
+      '/images/labs/3.jpg',
+      '/images/labs/4.jpg',
+      '/images/labs/5.jpg',
+      '/images/labs/6.jpg',
+      '/images/labs/7.jpg',
+      '/images/labs/8.jpg',
+      '/images/labs/9.jpg',
+      '/images/labs/10.jpg',
+      '/images/labs/11.jpg',
+      '/images/labs/12.jpg',
+      '/images/labs/13.jpg',
+      '/images/labs/14.jpg',
+      '/images/labs/15.jpg',
+      '/images/labs/16.jpg',
+      '/images/labs/17.jpg',
+      '/images/labs/18.jpg',
+      '/images/labs/19.jpg',
+      '/images/labs/20.jpg',
+      '/images/labs/21.jpg',
+      '/images/labs/22.jpg',
+      '/images/labs/23.jpg',
+      '/images/labs/24.jpg',
+      '/images/labs/25.jpg',
+      '/images/labs/26.jpg',
+      '/images/labs/27.jpg',
+      '/images/labs/28.jpg',
+      '/images/labs/29.jpg',
+      '/images/labs/30.jpg',
+      '/images/labs/31.jpg',
+    ]
+  },
+  {
     id: 'associativism',
     title: 'Associativismo',
     type: 'Pessoas',
     image: '/images/covers/associativism.jpeg',
     route: '/albums/associativism',
+    subtitle: 'Esse registro informa a importância das ações de entidades cooperadas.',
+    description:
+      'A importância do associativismo em defesa de determinado segmento de mercado e do desenvolvimento econômico e social pode ser mostrada através de reportagem fotográfica. As imagens destacam o trabalho desenvolvimento pelas entidades da iniciativa privada, como federações, associações empresariais, sindicatos patronais e fundações, através de suas ações, eventos e estrutura de atendimento aos associados.',
     images: [
       '/images/associativism/0.jpg',
       '/images/associativism/1.jpg',
@@ -17,13 +68,16 @@ export const albums = [
     id: 'celebrities',
     title: 'Celebridades',
     type: 'Pessoas',
-    image: '/images/covers/celebrities.jpeg',
+    subtitle: 'De relevante importância em momentos especiais.',
+    description:
+      'A fotografia de celebridades captura a essência das pessoas em momentos de relevância. Possui importância especial em inaugurações, feiras, convenções, workshops, palestras, visitas, lançamentos, coletivas de imprensa e confraternizações.',
     route: {
       name: 'albums-id',
       params: {
         id: 'celebrities'
       },
     },
+    image: '/images/covers/celebrities.jpeg',
     images: [
       '/images/celebrities/0.jpg',
       '/images/celebrities/1.jpg',
@@ -39,16 +93,64 @@ export const albums = [
     ]
   },
   {
+    id: 'civil_construction',
+    title: 'Construção civil e Manutenção',
+    subtitle: 'A grandeza de uma obra mostrada em detalhes.',
+    description: 'O registro de todos os momentos forma uma obra completa e viva. Do fundamento à inauguração, o objetivo é transformar as ações práticas em imagens que transmitam o esforço conjunto da equipe, a técnica empregada, as pessoas envolvidas e a grandeza do empreendimento.',
+    type: 'Indústria',
+    image: '/images/covers/civil_construction.jpg',
+    route: {
+      name: 'albums-id',
+      params: {
+        id: 'civil_construction'
+      },
+    },
+    images: [
+      '/images/civil_construction/0.jpg',
+      '/images/civil_construction/1.jpg',
+      '/images/civil_construction/2.jpg',
+      '/images/civil_construction/3.jpg',
+      '/images/civil_construction/4.jpg',
+      '/images/civil_construction/5.jpg',
+      '/images/civil_construction/6.jpg',
+      '/images/civil_construction/7.jpg',
+      '/images/civil_construction/8.jpg',
+      '/images/civil_construction/9.jpg',
+      '/images/civil_construction/10.jpg',
+      '/images/civil_construction/11.jpg',
+      '/images/civil_construction/12.jpg',
+      '/images/civil_construction/13.jpg',
+      '/images/civil_construction/14.jpg',
+      '/images/civil_construction/15.jpg',
+      '/images/civil_construction/16.jpg',
+      '/images/civil_construction/17.jpg',
+      '/images/civil_construction/18.jpg',
+      '/images/civil_construction/19.jpg',
+      '/images/civil_construction/20.jpg',
+      '/images/civil_construction/21.jpg',
+      '/images/civil_construction/22.jpg',
+      '/images/civil_construction/23.jpg',
+      '/images/civil_construction/24.jpg',
+      '/images/civil_construction/25.jpg',
+      '/images/civil_construction/26.jpg',
+      '/images/civil_construction/27.jpg',
+      '/images/civil_construction/28.jpg',
+    ]
+  },
+  {
     id: 'events',
     title: 'Eventos',
     type: 'Pessoas',
-    image: '/images/covers/corporative_events.jpeg',
+    subtitle: 'Revela o acompanhamento e a trajetória de sucesso da sua empresa',
+    description:
+      'A exposição dos eventos corporativos é essencial para decretar o seu sucesso. A cobertura fotográfica é, portanto, imprescindível para divulgar a realização de feiras, lançamentos, palestras, inaugurações, confraternizações e uma infinidade de eventos que valorizem a imagem da empresa. O acompanhamento dos eventos permite capturar imagens de interação da empresa com seus clientes, divulgando de forma instantânea e completa todo o seu potencial.',
     route: {
       name: 'albums-id',
       params: {
         id: 'events'
       },
     },
+    image: '/images/covers/corporative_events.jpeg',
     images: [
       '/images/events/0.jpg',
       '/images/events/1.jpg',
@@ -83,16 +185,75 @@ export const albums = [
     ]
   },
   {
+    id: 'facades',
+    title: 'Fachadas e Aéreas',
+    type: 'Indústria',
+    subtitle: 'Potencializa credibilidade da estrutura da Empresa.',
+    description: 'Fotos oficiais da estrutura da empresa são essenciais para dar credencial de potencialidade de atendimento. Imagens da fachada e fotografias aéreas da empresa, diurnas ou noturnas, exigem técnica e arte de captação e produção para alcançar o melhor resultado.',
+    route: {
+      name: 'albums-id',
+      params: {
+        id: 'facades'
+      },
+    },
+    image: '/images/covers/facades.jpg',
+    images: [
+      '/images/facades/0.jpg',
+      '/images/facades/1.jpg',
+      '/images/facades/2.jpg',
+      '/images/facades/3.jpg',
+      '/images/facades/4.jpg',
+      '/images/facades/5.jpg',
+      '/images/facades/6.jpg',
+      '/images/facades/7.jpg',
+      '/images/facades/8.jpg',
+      '/images/facades/9.jpg',
+      '/images/facades/10.jpg',
+      '/images/facades/11.jpg',
+      '/images/facades/12.jpg',
+      '/images/facades/13.jpg',
+      '/images/facades/14.jpg',
+      '/images/facades/15.jpg',
+      '/images/facades/16.jpg',
+      '/images/facades/17.jpg',
+      '/images/facades/18.jpg',
+      '/images/facades/19.jpg',
+      '/images/facades/20.jpg',
+      '/images/facades/21.jpg',
+      '/images/facades/22.jpg',
+      '/images/facades/23.jpg',
+      '/images/facades/24.jpg',
+      '/images/facades/25.jpg',
+      '/images/facades/26.jpg',
+      '/images/facades/27.jpg',
+      '/images/facades/28.jpg',
+      '/images/facades/29.jpg',
+      '/images/facades/30.jpg',
+      '/images/facades/31.jpg',
+      '/images/facades/32.jpg',
+      '/images/facades/33.jpg',
+      '/images/facades/34.jpg',
+      '/images/facades/35.jpg',
+      '/images/facades/36.jpg',
+      '/images/facades/37.jpg',
+      '/images/facades/38.jpg',
+      '/images/facades/39.jpg',
+    ]
+  },
+  {
     id: 'industrials',
     title: 'Industriais',
     type: 'Indústria',
-    image: '/images/covers/industrial.jpeg',
     route: {
       name: 'albums-id',
       params: {
         id: 'industrials'
       },
     },
+    subtitle: 'Toda infraestrutura e tecnologia agregada são relevantes nesta ótica.',
+    description:
+      'A fotografia industrial consegue mostrar uma fábrica em ação, revelando a perfeita sinergia entre profissionais, processo e equipamentos. Dos pequenos detalhes às amplas imagens produtivas, são destacadas as características que movem a empresa, sua infraestrutura, sua tecnologia e a qualificação de seus profissionais.',
+    image: '/images/covers/industrial.jpeg',
     images: [
       '/images/industrial/0.jpg',
       '/images/industrial/1.jpg',
@@ -146,6 +307,9 @@ export const albums = [
         id: 'interiors'
       },
     },
+    subtitle: 'Toda a beleza, textura, cor e perspectiva retratada afim de mostrar o bem-estar.',
+    description:
+      'A fotografia registra a beleza dos ambientes através dos traços da arquitetura, da decoração e da iluminação. Para uma composição de qualidade, é necessário enquadramento adequado, bom gosto e técnicas apuradas de captação de cor, textura, perspectiva, detalhes e luz.',
     images: [
       '/images/interiors/0.jpg',
       '/images/interiors/1.jpg',
@@ -183,6 +347,9 @@ export const albums = [
     title: 'Produtos',
     type: 'Indústria',
     image: '/images/covers/products.jpeg',
+    subtitle: 'Essa fotografia requer técnica avançada para destacar seu produto.',
+    description:
+      'A técnica da fotografia Still extrai todos os detalhes de produtos, destacando suas formas, texturas e qualidade de acabamento. O profissionalismo envolvido em todo o processo de captura da imagem e pós-produção garante imagens que agregam valor ao produto. A Metzger Fotografia realiza o trabalho em seu próprio estúdio ou na empresa através de equipamentos móveis.',
     route: {
       name: 'albums-id',
       params: {
@@ -268,13 +435,16 @@ export const albums = [
     id: 'professionals',
     title: 'Profissionais',
     type: 'Pessoas',
-    image: 'images/covers/professionals.jpeg',
+    subtitle: 'A Fotografia que revela o engajamento dos seus colaboradores.',
+    description:
+      'A fotografia executiva ajuda a dar uma imagem humanizada à empresa. Ela releva o engajamento das pessoas que formam uma empresa, mostra o trabalho integrado de equipes e destaca o atendimento diferenciado que ela pode oferecer ao mercado.',
     route: {
       name: 'albums-id',
       params: {
         id: 'professionals'
       },
     },
+    image: '/images/covers/professionals.jpeg',
     images: [
       '/images/professionals/0.jpg',
       '/images/professionals/1.jpg',
@@ -303,47 +473,4 @@ export const albums = [
   },
 ]
 
-export const specialties = [
-  {
-    title: 'Associativismo',
-    subtitle:
-      'A importância do associativismo em defesa de determinado segmento de mercado e do desenvolvimento econômico e social pode ser mostrada através de reportagem fotográfica. As imagens destacam o trabalho desenvolvimento pelas entidades da iniciativa privada, como federações, associações empresariais, sindicatos patronais e fundações, através de suas ações, eventos e estrutura de atendimento aos associados.',
-    image: 'images/covers/associativism.jpeg',
-  },
-  {
-    title: 'Celebridades',
-    subtitle:
-      'A fotografia de celebridades captura a essência das pessoas em momentos de relevância. Possui importância especial em inaugurações, feiras, convenções, workshops, palestras, visitas, lançamentos, coletivas de imprensa e confraternizações.',
-    image: 'images/covers/celebrities.jpeg',
-  },
-  {
-    title: 'Eventos corporativos',
-    subtitle:
-      'A exposição dos eventos corporativos é essencial para decretar o seu sucesso. A cobertura fotográfica é, portanto, imprescindível para divulgar a realização de feiras, lançamentos, palestras, inaugurações, confraternizações e uma infinidade de eventos que valorizem a imagem da empresa. O acompanhamento dos eventos permite capturar imagens de interação da empresa com seus clientes, divulgando de forma instantânea e completa todo o seu potencial.',
-    image: 'images/covers/corporative_events.jpeg',
-  },
-  {
-    title: 'Indústriais',
-    subtitle:
-      'A fotografia industrial consegue mostrar uma fábrica em ação, revelando a perfeita sinergia entre profissionais, processo e equipamentos. Dos pequenos detalhes às amplas imagens produtivas, são destacadas as características que movem a empresa, sua infraestrutura, sua tecnologia e a qualificação de seus profissionais.',
-    image: 'images/covers/industrial.jpeg',
-  },
-  {
-    title: 'Interiores',
-    subtitle:
-      'A fotografia registra a beleza dos ambientes através dos traços da arquitetura, da decoração e da iluminação. Para uma composição de qualidade, é necessário enquadramento adequado, bom gosto e técnicas apuradas de captação de cor, textura, perspectiva, detalhes e luz.',
-    image: 'images/covers/interiors.jpeg',
-  },
-  {
-    title: 'Produtos',
-    subtitle:
-      'A técnica da fotografia Still extrai todos os detalhes de produtos, destacando suas formas, texturas e qualidade de acabamento. O profissionalismo envolvido em todo o processo de captura da imagem e pós-produção garante imagens que agregam valor ao produto. A Metzger Fotografia realiza o trabalho em seu próprio estúdio ou na empresa através de equipamentos móveis.',
-    image: 'images/covers/products.jpeg',
-  },
-  {
-    title: 'Profissionais',
-    subtitle:
-      'A fotografia executiva ajuda a dar uma imagem humanizada à empresa. Ela releva o engajamento das pessoas que formam uma empresa, mostra o trabalho integrado de equipes e destaca o atendimento diferenciado que ela pode oferecer ao mercado.',
-    image: 'images/covers/professionals.jpeg',
-  },
-]
+export const specialties = albums 
