@@ -34,6 +34,13 @@ export default {
       pause: 2000,
     })
   },
+  beforeDestroy() {
+    console.log($('#lightgallery').data('lightGallery'))
+    if ($('#lightgallery').data('lightGallery'))
+      $('#lightgallery')
+        .data('lightGallery')
+        .destroy(true)
+  },
   methods: {
     makeHtmlTitle(title) {
       return `<h4>${title}</h4>`

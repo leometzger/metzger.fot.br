@@ -6,8 +6,8 @@
           <div class="row">
             <div class="col-lg-8 mb-5">
               <form action="http://formmail.kinghost.net/formmail.cgi">
-                <input type="hidden" name="redirect" value="https://metzger.fot.br/contact" />
-                <input type="hidden" name="recipient" value="leonardo@metzger.fot.br" />
+                <input type="hidden" name="redirect" value="https://metzger.fot.br" />
+                <input type="hidden" name="recipient" value="contato@metzger.fot.br" />
                 <input type="hidden" name="message" :value="message" />
 
                 <div class="row form-group">
@@ -101,13 +101,15 @@ export default {
       firstName: '',
       lastName: '',
       msg: '',
+      subject: '',
     }
   },
   computed: {
     message() {
       return `
-        Pessoa: ${this.firstName} ${this.lastName} -
-        Assunto: ${this.msg}
+        Pessoa: ${this.firstName} ${this.lastName}
+        Assunto: ${this.subject}
+        Mensagem: ${this.msg}
       `
     },
   },

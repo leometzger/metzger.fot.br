@@ -5,12 +5,7 @@ export const albums = [
     type: 'Lugares',
     subtitle: 'Sensações como credibilidade, conforto e segurança são os pontos altos dessas fotografias.',
     description: 'O registro de processos técnicos em ambientes clínicos, como clínicas, laboratórios e hospitais, exige técnica e olhar humanizado. A composição deve resultar em imagem que transmitam sensação de segurança, eficiência e conforto.',
-    route: {
-      name: 'albums-id',
-      params: {
-        id: 'labs'
-      },
-    },
+    route: '/albums/labs',
     image: '/images/covers/labs.jpg',
     images: [
       '/images/labs/0.jpg',
@@ -71,12 +66,7 @@ export const albums = [
     subtitle: 'De relevante importância em momentos especiais.',
     description:
       'A fotografia de celebridades captura a essência das pessoas em momentos de relevância. Possui importância especial em inaugurações, feiras, convenções, workshops, palestras, visitas, lançamentos, coletivas de imprensa e confraternizações.',
-    route: {
-      name: 'albums-id',
-      params: {
-        id: 'celebrities'
-      },
-    },
+    route: '/albums/celebrities',
     image: '/images/covers/celebrities.jpeg',
     images: [
       '/images/celebrities/0.jpg',
@@ -99,12 +89,7 @@ export const albums = [
     description: 'O registro de todos os momentos forma uma obra completa e viva. Do fundamento à inauguração, o objetivo é transformar as ações práticas em imagens que transmitam o esforço conjunto da equipe, a técnica empregada, as pessoas envolvidas e a grandeza do empreendimento.',
     type: 'Indústria',
     image: '/images/covers/civil_construction.jpg',
-    route: {
-      name: 'albums-id',
-      params: {
-        id: 'civil_construction'
-      },
-    },
+    route: '/albums/civil_construction',
     images: [
       '/images/civil_construction/0.jpg',
       '/images/civil_construction/1.jpg',
@@ -144,12 +129,7 @@ export const albums = [
     subtitle: 'Revela o acompanhamento e a trajetória de sucesso da sua empresa',
     description:
       'A exposição dos eventos corporativos é essencial para decretar o seu sucesso. A cobertura fotográfica é, portanto, imprescindível para divulgar a realização de feiras, lançamentos, palestras, inaugurações, confraternizações e uma infinidade de eventos que valorizem a imagem da empresa. O acompanhamento dos eventos permite capturar imagens de interação da empresa com seus clientes, divulgando de forma instantânea e completa todo o seu potencial.',
-    route: {
-      name: 'albums-id',
-      params: {
-        id: 'events'
-      },
-    },
+    route: '/albums/events',
     image: '/images/covers/corporative_events.jpeg',
     images: [
       '/images/events/0.jpg',
@@ -190,12 +170,7 @@ export const albums = [
     type: 'Indústria',
     subtitle: 'Potencializa credibilidade da estrutura da Empresa.',
     description: 'Fotos oficiais da estrutura da empresa são essenciais para dar credencial de potencialidade de atendimento. Imagens da fachada e fotografias aéreas da empresa, diurnas ou noturnas, exigem técnica e arte de captação e produção para alcançar o melhor resultado.',
-    route: {
-      name: 'albums-id',
-      params: {
-        id: 'facades'
-      },
-    },
+    route: '/albums/facades',
     image: '/images/covers/facades.jpg',
     images: [
       '/images/facades/0.jpg',
@@ -244,12 +219,7 @@ export const albums = [
     id: 'industrials',
     title: 'Industriais',
     type: 'Indústria',
-    route: {
-      name: 'albums-id',
-      params: {
-        id: 'industrials'
-      },
-    },
+    route: '/albums/industrials',
     subtitle: 'Toda infraestrutura e tecnologia agregada são relevantes nesta ótica.',
     description:
       'A fotografia industrial consegue mostrar uma fábrica em ação, revelando a perfeita sinergia entre profissionais, processo e equipamentos. Dos pequenos detalhes às amplas imagens produtivas, são destacadas as características que movem a empresa, sua infraestrutura, sua tecnologia e a qualificação de seus profissionais.',
@@ -301,12 +271,7 @@ export const albums = [
     title: 'Interiores',
     type: 'Lugares',
     image: '/images/covers/interiors.jpeg',
-    route: {
-      name: 'albums-id',
-      params: {
-        id: 'interiors'
-      },
-    },
+    route: '/albums/interiors',
     subtitle: 'Toda a beleza, textura, cor e perspectiva retratada afim de mostrar o bem-estar.',
     description:
       'A fotografia registra a beleza dos ambientes através dos traços da arquitetura, da decoração e da iluminação. Para uma composição de qualidade, é necessário enquadramento adequado, bom gosto e técnicas apuradas de captação de cor, textura, perspectiva, detalhes e luz.',
@@ -343,6 +308,37 @@ export const albums = [
     ]
   },
   {
+    id: 'institutional',
+    title: 'Institucional',
+    type: 'Lugares',
+    image: '/images/covers/institutional.jpg',
+    route: '/albums/institutional',
+    subtitle: 'Aqui se evidencia a alma da sua Empresa.',
+    description: 'A visualização da empresa de forma geral é destacada pela fotografia institucional. O trabalho da diretoria e dos demais profissionais, os ambientes administrativos e produtivos, os ambientes externos e internos, a estrutura de atendimento ao mercado e o segmento de atuação são retratados para mostrar sua relevância no mercado e valorizar a sua imagem.',
+    images: [
+      '/images/institutional/1.jpg',
+      '/images/institutional/2.jpg',
+      '/images/institutional/3.jpg',
+      '/images/institutional/4.jpg',
+      '/images/institutional/5.jpg',
+      '/images/institutional/6.jpg',
+      '/images/institutional/7.jpg',
+      '/images/institutional/8.jpg',
+      '/images/institutional/9.jpg',
+      '/images/institutional/10.jpg',
+      '/images/institutional/11.jpg',
+      '/images/institutional/12.jpg',
+      '/images/institutional/13.jpg',
+      '/images/institutional/14.jpg',
+      '/images/institutional/15.jpg',
+      '/images/institutional/16.jpg',
+      '/images/institutional/17.jpg',
+      '/images/institutional/18.jpg',
+      '/images/institutional/19.jpg',
+      '/images/institutional/20.jpg',
+    ]
+  },
+  {
     id: 'products',
     title: 'Produtos',
     type: 'Indústria',
@@ -350,12 +346,7 @@ export const albums = [
     subtitle: 'Essa fotografia requer técnica avançada para destacar seu produto.',
     description:
       'A técnica da fotografia Still extrai todos os detalhes de produtos, destacando suas formas, texturas e qualidade de acabamento. O profissionalismo envolvido em todo o processo de captura da imagem e pós-produção garante imagens que agregam valor ao produto. A Metzger Fotografia realiza o trabalho em seu próprio estúdio ou na empresa através de equipamentos móveis.',
-    route: {
-      name: 'albums-id',
-      params: {
-        id: 'products'
-      },
-    },
+    route: '/albums/products',
     images: [
       '/images/products/0.jpg',
       '/images/products/1.jpg',
@@ -438,12 +429,7 @@ export const albums = [
     subtitle: 'A Fotografia que revela o engajamento dos seus colaboradores.',
     description:
       'A fotografia executiva ajuda a dar uma imagem humanizada à empresa. Ela releva o engajamento das pessoas que formam uma empresa, mostra o trabalho integrado de equipes e destaca o atendimento diferenciado que ela pode oferecer ao mercado.',
-    route: {
-      name: 'albums-id',
-      params: {
-        id: 'professionals'
-      },
-    },
+    route: '/albums/professionals',
     image: '/images/covers/professionals.jpeg',
     images: [
       '/images/professionals/0.jpg',
@@ -473,4 +459,10 @@ export const albums = [
   },
 ]
 
-export const specialties = albums 
+export const specialties = albums.map(album => ({
+  id: album.id,
+  title: album.title,
+  subtitle: album.subtitle,
+  description: album.description,
+  image: album.image
+}))

@@ -15,7 +15,7 @@ def rename_files(dir):
 
 
 if __name__ == "__main__":
-    images_dir = 'public/images/facades'
+    images_dir = 'public/images/institutional'
     rename_files(images_dir)
     #subdirs = os.listdir(images_dir)
 
