@@ -1,21 +1,15 @@
 # metzger.fot.br
 
-## Project setup
+Project maded to be a portfolio of my dad's services.
+
+## Run
+
 ```
-yarn install
+npm install
+
+npm run dev
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+## License
 
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
+MIT
